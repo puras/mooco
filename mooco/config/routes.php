@@ -43,6 +43,7 @@ $route['404_override'] = '';
 
 $route['manage'] = 'manage/home/index';
 
-
+map_resources('manage/article');
+map_resources('manage/article_category');
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

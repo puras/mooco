@@ -35,7 +35,7 @@
         <div class="ui devided padded grid">
             <div class="three wide column">
                 <div class="ui teal vertical menu">
-                    <a class="active item">
+                    <a class="active item" href="<?php echo base_url('/manage'); ?>">
                         <i class="home icon"></i>
                         主页
                     </a>
@@ -43,7 +43,7 @@
                         <i class="content icon"></i>
                         内容管理
                         <div class="menu">
-                            <?php link_to('manage/articles', '文章管理', array('class' => 'item')); ?>
+                            <?php link_to('manage/article', '文章管理', array('class' => 'item')); ?>
                             <?php link_to('manage/pages', '单页管理', array('class' => 'item')); ?>
                             <?php link_to('manage/links', '链接管理', array('class' => 'item')); ?>
                             <?php link_to('manage/guest_books', '留言板', array('class' => 'item')); ?>
@@ -53,7 +53,7 @@
                         <i class="sitemap icon"></i>
                         <b>分类管理</b>
                         <div class="menu">
-                            <?php link_to('manage/article_cates', '文章分类', array('class' => 'item')); ?>
+                            <?php link_to('manage/article_category', '文章分类', array('class' => 'item')); ?>
                             <?php link_to('manage/page_cates', '单页分类', array('class' => 'item')); ?>
                             <?php link_to('manage/link_cates', '链接分类', array('class' => 'item')); ?>
                         </div>
