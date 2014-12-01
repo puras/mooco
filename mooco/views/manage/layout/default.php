@@ -83,13 +83,13 @@
         </div>
     </div>
 
-    <!-- <div class="ui inverted footer vertical segment">
+    <div class="ui inverted footer vertical segment">
         <div class="ui stackable center aligned page grid">
             <div class="ten wide column">
                 Copyright MOOKO.NET 2014. All Rights Reserved.
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script type="text/javascript" src="<?php asset_url('lib/jquery/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php asset_url('lib/semantic-ui/semantic.js'); ?>"></script>
