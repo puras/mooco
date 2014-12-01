@@ -9,7 +9,12 @@
 |	http://codeigniter.com/user_guide/general/hooks.html
 |
 */
-
+$hook['display_override'][] = array(
+    'class' => 'MKYield',
+    'function' => 'do_yield',
+    'filename' => 'mk_yield.php',
+    'filepath' => 'hooks'
+);
 
 
 /* End of file hooks.php */
