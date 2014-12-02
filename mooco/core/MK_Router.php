@@ -100,3 +100,6 @@ class MK_Router extends CI_Router {
        parent::_parse_routes();
     }
 }
+
+/* End of file MK_Router.php */
+/* Location: ./application/core/MK_Router.php */

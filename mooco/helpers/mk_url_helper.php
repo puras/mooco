@@ -17,5 +17,17 @@ if (!function_exists('asset_url')) {
     }
 }
 
+if (!function_exists('theme_asset_url')) {
+    function theme_asset_url($path = '/', $is_return = false) {
+        global $application_folder;
+        $theme_folder = '/views/themes/';
+        $ci =& get_instance();
+
+        $url = base_url($application_folder . $theme_folder . $ci->template) . '/assets/' . $path;
+        if ($is_return) return $url;
+        echo $url;
+    }
+}
+
 /* End of file mk_url_helper.php */
 /* Location: ./application/herpers/mk_url_helper.php */

@@ -282,6 +282,7 @@ $config['cookie_secure']	= FALSE;
 |
 */
 $config['global_xss_filtering'] = FALSE;
+// $config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

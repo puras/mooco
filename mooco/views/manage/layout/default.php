@@ -1,3 +1,5 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -22,7 +24,7 @@
         <div class="right menu">
             <div class="ui dropdown item">
                 <div class="ui menu">
-                    <div class="item">注销账号</div>
+                    <?php link_to('manage/logout', '注销账号', array('class' => 'item')); ?>
                 </div>
                 <img class="ui avatar image" src="<?php asset_url('img/avatar-default.gif'); ?>" />
                 欢迎，Puras.He
@@ -44,18 +46,19 @@
                         内容管理
                         <div class="menu">
                             <?php link_to('manage/article', '文章管理', array('class' => 'item')); ?>
-                            <?php link_to('manage/pages', '单页管理', array('class' => 'item')); ?>
-                            <?php link_to('manage/links', '链接管理', array('class' => 'item')); ?>
-                            <?php link_to('manage/guest_books', '留言板', array('class' => 'item')); ?>
+                            <?php link_to('manage/page', '单页管理', array('class' => 'item')); ?>
+                            <?php link_to('manage/link', '链接管理', array('class' => 'item')); ?>
+                            <?php link_to('manage/guest_book', '留言板', array('class' => 'item')); ?>
                         </div>
                     </div>
                     <div class="item">
                         <i class="sitemap icon"></i>
                         <b>分类管理</b>
                         <div class="menu">
+                            <?php link_to('manage/menu', '菜单分类', array('class' => 'item')); ?>
                             <?php link_to('manage/article_category', '文章分类', array('class' => 'item')); ?>
-                            <?php link_to('manage/page_cates', '单页分类', array('class' => 'item')); ?>
-                            <?php link_to('manage/link_cates', '链接分类', array('class' => 'item')); ?>
+                            <?php link_to('manage/page_category', '单页分类', array('class' => 'item')); ?>
+                            <?php link_to('manage/link_category', '链接分类', array('class' => 'item')); ?>
                         </div>
                     </div>
                     <div class="item">

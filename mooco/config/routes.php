@@ -38,12 +38,29 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "home";
 $route['404_override'] = '';
 
 $route['manage'] = 'manage/home/index';
 
 map_resources('manage/article');
+map_resources('manage/page');
+map_resources('manage/link');
+map_resources('manage/guest_book');
 map_resources('manage/article_category');
+map_resources('manage/page_category');
+map_resources('manage/link_category');
+map_resources('manage/user');
+map_resources('manage/usergroup');
+map_resources('manage/template');
+
+$route['manage/site_info'] = 'manage/site_info/index';
+$route['manage/site_seo'] = 'manage/site_seo/index';
+
+$route['manage/login'] = 'manage/user/login';
+$route['manage/logout'] = 'manage/user/logout';
+
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

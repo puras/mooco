@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Article extends MKAdmin_Controller {
+class Article extends Admin_Controller {
     public function __construct() {
         parent::__construct();
         // $this->load->model('article_cate_model');
