@@ -22,6 +22,12 @@
         </a>
 
         <div class="right menu">
+            <div class="ui item">
+                <a href="<?php echo base_url('/manage'); ?>" title="返回管理首页"><i class="large circular home icon"></i></a>
+            </div>
+            <div class="ui item">
+                <a href="<?php echo base_url('/'); ?>" title="返回前台页面"><i class="large circular undo icon"></i></a>
+            </div>
             <div class="ui dropdown item">
                 <div class="ui menu">
                     <?php link_to('manage/logout', '注销账号', array('class' => 'item')); ?>
@@ -37,10 +43,10 @@
         <div class="ui devided padded grid">
             <div class="three wide column">
                 <div class="ui teal vertical menu">
-                    <a class="active item" href="<?php echo base_url('/manage'); ?>">
+                    <!-- <a class="active item" href="<?php echo base_url('/manage'); ?>">
                         <i class="home icon"></i>
                         主页
-                    </a>
+                    </a> -->
                     <div class="item">
                         <i class="content icon"></i>
                         内容管理
