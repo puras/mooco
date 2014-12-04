@@ -226,7 +226,8 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+// 吃葡萄不吐葡萄皮，不吃葡萄倒吐葡萄皮
+$config['encryption_key'] = 'cptbtptpbcptdtptp';
 
 /*
 |--------------------------------------------------------------------------

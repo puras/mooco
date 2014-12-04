@@ -13,7 +13,10 @@ class Site_info_model extends MK_Model {
     }
 
     public function update($site_info) {
-        parent::update($site_info, array('id' => $site_info->id));
+        $old_site_info = $this->find_site_info();
+        if ($old_site_info) {
+            parent::update($site_info, array('id' => $old_site_info->id));
+        }
     }
 
     protected function get_table_name() {

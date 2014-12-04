@@ -46,6 +46,7 @@ $route['manage'] = 'manage/home/index';
 map_resources('manage/article');
 map_resources('manage/page');
 map_resources('manage/link');
+map_resources('manage/menu');
 map_resources('manage/guest_book');
 map_resources('manage/article_category');
 map_resources('manage/page_category');

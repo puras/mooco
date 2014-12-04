@@ -33,7 +33,7 @@
                     <?php link_to('manage/logout', '注销账号', array('class' => 'item')); ?>
                 </div>
                 <img class="ui avatar image" src="<?php asset_url('img/avatar-default.gif'); ?>" />
-                欢迎，Puras.He
+                欢迎，<?php echo $current_user->nickname; ?>
                 <i id="user-dropdown" class="dropdown icon"></i>
             </div>
         </div>
@@ -71,8 +71,8 @@
                         <i class="user icon"></i>
                         用户管理 
                         <div class="menu">
-                            <?php link_to('manage/users', '用户管理', array('class' => 'item')); ?>
-                            <?php link_to('manage/usergroups', '用户组管理', array('class' => 'item')); ?> 
+                            <?php link_to('manage/user', '用户管理', array('class' => 'item')); ?>
+                            <?php link_to('manage/usergroup', '用户组管理', array('class' => 'item')); ?> 
                         </div>
                     </div>
                     <div class="item">
@@ -80,8 +80,8 @@
                         系统管理
                         <div class="menu">
                             <?php link_to('manage/site_info', '基本信息', array('class' => 'item')); ?>
-                            <?php link_to('manage/site_info/seo', 'SEO设置', array('class' => 'item')); ?>
-                            <?php link_to('manage/templates', '模板管理', array('class' => 'item')); ?>
+                            <?php link_to('manage/site_seo', 'SEO设置', array('class' => 'item')); ?>
+                            <?php link_to('manage/template', '模板管理', array('class' => 'item')); ?>
                         </div>
                     </div>
                 </div>
