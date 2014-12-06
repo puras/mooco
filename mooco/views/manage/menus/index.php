@@ -1,6 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-
 <div class="ui one column relaxed grid">
     <div class="column">
         <div class="ui segment">

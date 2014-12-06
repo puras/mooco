@@ -7,7 +7,7 @@ class Guest_book extends Admin_Controller {
     }
 
     public function index() {
-        $data = $this->guest_book_model->find_all();
+        $data['guest_books'] = $this->guest_book_model->find_all();
         $this->load->view($this->view_path('index'), $data);
     }
 

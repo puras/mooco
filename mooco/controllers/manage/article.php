@@ -8,12 +8,12 @@ class Article extends Admin_Controller {
     }
 
     public function index() {
-        $data = $this->article_model->find_all('id asc');
+        $data['articles'] = $this->article_model->find_all('id asc');
         $this->load->view($this->view_path('index'), $data);
     }
 
     public function show($id) {
-    $this->load->view($this->view_path('show'));
+        $this->load->view($this->view_path('show'));
     }
 
     public function new_form() {
@@ -57,7 +57,7 @@ class Article extends Admin_Controller {
             'from'        => $this->input->post('from'),
             'author'      => $this->input->post('author'),
             'click_count' => $this->input->post('click_count'),
-            'cate_id'     => $this->input->post('cate_id')
+            'category_id' => $this->input->post('category_id')
         );
     }
 }

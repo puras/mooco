@@ -6,6 +6,10 @@ $(document).ready(function() {
     $('.form.submit').on('click', function() {
         this.submit();
     });
+
+    KindEditor.ready(function(K) {
+        K.create('textarea[name="content"]');
+    });
 });
 
 $(document).delegate('a[data-method]', 'click', function(e) {

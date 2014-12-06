@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Menu extends Admin_Controller {
+class Page extends Admin_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('page_model');
@@ -8,7 +8,7 @@ class Menu extends Admin_Controller {
     }
 
     public function index() {
-        $data = $this->page_model->find_all();
+        $data['pages'] = $this->page_model->find_all();
         if ($this->is_ajax()) {
             echo json_encode($data);
             exit;
@@ -60,7 +60,7 @@ class Menu extends Admin_Controller {
             'alias'         => $this->input->post('alias'),
             'content'       => $this->input->post('content'),
             'part_template' => $this->input->post('part_template'),
-            'cate_id'       => $this->input->post('cate_id'),
+            'category_id'   => $this->input->post('category_id'),
             'language'      => 'cn'
         );
     }

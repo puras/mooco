@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" type="text/css" href="<?php asset_url('lib/semantic-ui/semantic.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php asset_url('css/mooco.css'); ?>">
+
+    <link rel="stylesheet" type="text/css" href="<?php asset_url('lib/kindeditor/themes/default/default.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php asset_url('lib/kindeditor/plugins/code/prettify.css'); ?>" />
 </head>
 <body>
     
@@ -102,6 +105,9 @@
 
     <script type="text/javascript" src="<?php asset_url('lib/jquery/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php asset_url('lib/semantic-ui/semantic.js'); ?>"></script>
+    <script type="text/javascript" src="<?php asset_url('lib/kindeditor/kindeditor.js'); ?>"></script>
+    <script type="text/javascript" src="<?php asset_url('lib/kindeditor/lang/zh_CN.js'); ?>"></script>
+    <script type="text/javascript" src="<?php asset_url('lib/kindeditor/plugins/code/prettify.js'); ?>"></script>
     <script type="text/javascript" src="<?php asset_url('js/mooco.js'); ?>"></script>
 </body>
 </html>

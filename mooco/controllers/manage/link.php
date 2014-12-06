@@ -8,7 +8,7 @@ class Link extends Admin_Controller {
     }
 
     public function index() {
-        $data = $this->link_model->find_all();
+        $data['links'] = $this->link_model->find_all();
         $this->load->view($this->view_path('index'), $data);
     }
 
