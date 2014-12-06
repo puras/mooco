@@ -51,7 +51,7 @@ class Link extends Admin_Controller {
         return array(
             'title'       => $this->input->post('title'),
             'url'         => $this->input->post('url'),
-            'cate_id'     => $this->input->post('cate_id'),
+            'category_id' => $this->input->post('category_id'),
             'description' => $this->input->post('description'),
             'language'    => 'cn'
         );

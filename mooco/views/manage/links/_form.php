@@ -30,7 +30,7 @@
                 <div class="two fields">
                     <div class="field">
                         <label>类别</label>
-                        <?php select_tag($link, 'cate_id', array('list' => $link_categories, 'key' => 'id', 'val' => 'title')); ?>
+                        <?php select_tag($link, 'category_id', array('list' => $link_categories, 'key' => 'id', 'val' => 'title')); ?>
                     </div>
                     <div class="field">
                         <label>描述</label>

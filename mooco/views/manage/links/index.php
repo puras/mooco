@@ -22,7 +22,7 @@
                 ?>
                     <tr>
                         <td></td>
-                        <td><?php echo $link->cate_id; ?></td>
+                        <td><?php echo $link->category_id; ?></td>
                         <td><?php echo $link->id; ?></td>
                         <td><?php echo $link->title; ?></td>
                         <td><?php echo $link->url; ?></td>
