@@ -14,11 +14,8 @@ class Site_info_model extends MK_Model {
 
     public function update($site_info) {
         $old_site_info = $this->find_site_info();
-        var_dump($old_site_info);
-        // exit;
         if ($old_site_info) {
             parent::update($site_info, array('id' => $old_site_info->id));
-            echo $this->db->last_query();
         }
     }
 
