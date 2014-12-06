@@ -54,6 +54,7 @@ map_resources('manage/link_category');
 map_resources('manage/user');
 map_resources('manage/usergroup');
 map_resources('manage/template');
+$route['manage/template/(.*)/apply'] = 'manage/template/apply/$1';
 
 $route['manage/site_info'] = 'manage/site_info/index';
 $route['manage/site_seo'] = 'manage/site_seo/index';
