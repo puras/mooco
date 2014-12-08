@@ -5,7 +5,7 @@
         <div class="ui segment">
             <div class="ui ribbon label">基本信息</div>
             <br>
-            <form action="" method="post">
+            <form action="<?php echo base_url('/manage/site_info'); ?>" method="post">
             <div class="ui form segment">
                 <div class="two fields">
                     <div class="field">

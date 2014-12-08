@@ -8,10 +8,10 @@ class Article_Category extends Admin_Controller {
 
     public function index() {
         $data['article_categories'] = $this->article_category_model->find_all();
-    // if ($this->is_ajax()) {
-    //   echo json_encode($data); 
-    //   exit;
-    // }
+        if ($this->is_ajax()) {
+            echo json_encode($data); 
+            exit;
+        }
         $this->load->view($this->view_path('index'), $data);
     }
 

@@ -36,6 +36,17 @@ class Menu extends Admin_Controller {
     public function edit($id) {
         $data['menus'] = $this->menu_model->find_all();
         $data['menu'] = $this->menu_model->find_by_id($id);
+        $data['types'] = array(
+                array('link', '链接'),
+                array('page', '单页'),
+                array('article_category', '文章分类')
+            );
+        $data['targets'] = array(
+                array('_self', '本窗口'),
+                array('_blank', '新窗口'),
+                array('_parent', '父窗口'),
+                array('custom', '自定义')
+            );
         $this->load->view($this->view_path('edit'), $data);
     }
 
@@ -46,14 +57,14 @@ class Menu extends Admin_Controller {
         redirect($this->go_index());
     }
 
-    public function update() {
+    public function update($id) {
         $menu = $this->_form_data();
         $this->menu_model->update($menu, array('id' => $id));
 
         redirect($this->go_index());
     }
 
-    public function delete() {
+    public function delete($id) {
         $this->menu_model->delete($id);
 
         redirect($this->go_index());

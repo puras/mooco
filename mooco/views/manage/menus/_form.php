@@ -7,16 +7,16 @@
             <br>
             <form action="<?php echo $action; ?>" method="post">
             <div class="ui form segment">
-                <div class="two fields">
-                    <div class="field">
-                        <label>菜单名称</label>
-                        <div class="ui left input">
-                            <?php text_tag($menu, 'name', array('placeholder' => '填写菜单名称')); ?>
-                            <div class="ui corner label">
-                                <i class="icon asterisk"></i>
-                            </div>
+                <div class="field">
+                    <label>菜单名称</label>
+                    <div class="ui left input">
+                        <?php text_tag($menu, 'name', array('placeholder' => '填写菜单名称')); ?>
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
                         </div>
                     </div>
+                </div>
+                <div class="two fields">
                     <div class="field">
                         <label>菜单类型</label>
                         <div class="ui left input">
@@ -26,6 +26,13 @@
                                     array('key' => '', 'val' => '请选择'), 
                                     array('onchange' => 'change_type();'));
                             ?>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>&nbsp;</label>
+                        <div class="ui left input">
+                            <?php select_tag($menu, 'key_id', array(), false, array('style' => 'display: none;')); ?>
+                            <input type="hidden" id="old_key_id" name="old_key_id" value="<?php echo $menu->key_id; ?>">
                         </div>
                     </div>
                 </div>
