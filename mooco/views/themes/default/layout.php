@@ -51,11 +51,11 @@
 
         <div class="right menu">
             <div class="ui list">
-                <a class="item">
+                <a class="item" href="javascript:void(0);" onclick="set_home(this, '<?php echo $site_info->url; ?>');">
                     <i class="home icon"></i>
                     <div class="content">设为首页</div>
                 </a>
-                <a class="item">
+                <a class="item" href="javascript:void(0);" onclick="add_favorite('<?php echo $site_info->url; ?>', '<?php echo $site_info->name; ?>');">
                     <i class="star icon"></i>
                     <div class="content">收藏本站</div>
                 </a>
