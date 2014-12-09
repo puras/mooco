@@ -1,0 +1,49 @@
+#header {
+    height: 60px;
+    padding: 0;
+    z-index: 10000;
+}
+
+#header .logo {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 8px 5px;
+    position: absolute;
+    z-index: 999;
+}
+
+#header .menu_nav {
+    padding-left: 100px;
+}
+
+#header .menu_nav .menu .item {
+    padding: 20px 15px;
+    height: 60px;
+    font-size: 18px;
+}
+
+#header .menu_nav .menu .item .menu .item {
+    padding: 20px 15px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.ui.menu .item:before {
+    background: none;
+}
+
+#header .menu.right {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+#wrapper {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#img_box {
+    width: 560px;
+    height: 300px;
+}
