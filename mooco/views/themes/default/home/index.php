@@ -28,15 +28,22 @@
             <div class="ui list">
             <?php
                 $articles = $this->article_model->find_all_by_alias(array('category.alias' => 'news'));
-                $count = sizeof($articles) > 5 ? 5 : sizeof($articles);
+                $at_count = sizeof($articles);
+                $count = 5;
                 for($i = 0; $i < $count; $i++) {
-                    $article = $articles[$i];
+                    if ($i >= $at_count) {
+            ?>
+                <a class="item">&nbsp;</a>
+            <?php
+                    } else {
+                        $article = $articles[$i];
             ?>
                 <a class="item">
                     <i class="star icon"></i>
                     <div class="content"><?php echo truncate($article->title, 20); ?></div>
                 </a>
             <?php
+                    }
                 }
             ?>
             </div>
@@ -65,7 +72,7 @@
             ?>
                 <a class="item">
                     <i class="star icon"></i>
-                    <div class="content"><?php echo truncate($article->title, 30); ?></div>
+                    <div class="content"><?php echo truncate($article->title, 20); ?></div>
                 </a>
             <?php
                     }
