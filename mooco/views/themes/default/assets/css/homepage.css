@@ -1,5 +1,5 @@
 #header {
-    height: 60px;
+    height: 85px;
     padding: 0;
     z-index: 10000;
 }
@@ -13,17 +13,13 @@
     z-index: 999;
 }
 
-#header .menu_nav {
-    padding-left: 100px;
-}
-
-#header .menu_nav .menu .item {
-    padding: 20px 15px;
-    height: 60px;
+#header .menu.right .item {
+    padding: 35px 15px;
+    height: 85px;
     font-size: 18px;
 }
 
-#header .menu_nav .menu .item .menu .item {
+#header .menu.right .item .menu .item {
     padding: 20px 15px;
     height: 40px;
     font-size: 18px;
@@ -33,17 +29,12 @@
     background: none;
 }
 
-#header .menu.right {
+/*#header .menu.right {
     padding-top: 10px;
     padding-right: 20px;
-}
+}*/
 
 #wrapper {
     padding: 0;
     margin-bottom: 20px;
-}
-
-#img_box {
-    width: 560px;
-    height: 300px;
 }

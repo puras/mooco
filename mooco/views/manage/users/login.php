@@ -59,6 +59,6 @@
 
     <script type="text/javascript" src="<?php asset_url('lib/jquery/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php asset_url('lib/semantic-ui/semantic.js'); ?>"></script>
-    <script type="text/javascript" src="<?php asset_url('js/mooco.js'); ?>"></script>
+    <script type="text/javascript" src="<?php asset_url('js/login.js'); ?>"></script>
 </body>
 </html>

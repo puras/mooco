@@ -12,22 +12,24 @@
     <title><?php echo $site_info->name; ?> - Mooco</title>
 
     <link rel="stylesheet" type="text/css" href="<?php theme_asset_url('lib/semantic-ui/semantic.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php theme_asset_url('lib/owl.carousel/assets/owl.carousel.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php theme_asset_url('css/homepage.css'); ?>">
 
     <script type="text/javascript" src="<?php theme_asset_url('lib/jquery/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('lib/semantic-ui/semantic.js'); ?>"></script>
-    <script type="text/javascript" src="<?php theme_asset_url('lib/myfocus/myfocus-2.0.4.full.js'); ?>"></script>
+    <script type="text/javascript" src="<?php theme_asset_url('lib/owl.carousel/owl.carousel.js'); ?>"></script>
+    <script type="text/javascript" src="<?php theme_asset_url('lib/slider/jssor.js'); ?>"></script>
+    <script type="text/javascript" src="<?php theme_asset_url('lib/slider/jssor.slider.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('js/homepage.js'); ?>"></script>
 </head>
 <body>
     <div id="header" class="ui main top menu">
         <a href="/" class="left logo">
-            <img height="45px" src="<?php theme_asset_url('img/logo.png'); ?>">
+            <img height="65px" src="<?php theme_asset_url('img/2.jpg'); ?>">
         </a>
 
-        <div class="menu_nav">
-            <div class="left menu">
-                <a href="/" class="ui item">首页</a>
+            <div class="right menu">
+                <a href="/" class="ui active teal item">首页</a>
                 <?php
                     foreach(top_menus() as $menu) {
                         $items = $menu->items;
@@ -49,7 +51,7 @@
             </div>
         </div>
 
-        <div class="right menu">
+        <!-- <div class="right menu">
             <div class="ui list">
                 <a class="item" href="javascript:void(0);" onclick="set_home(this, '<?php echo $site_info->url; ?>');">
                     <i class="home icon"></i>
@@ -60,16 +62,9 @@
                     <div class="content">收藏本站</div>
                 </a>
             </div>
-        </div>
-    </div>
+        </div> -->
     <div id="wrapper" class="ui">
-        <div class="ui aligned page grid">
-            <div class="row">
-                <div class="sixteen wide column">
-                <?php echo $yield; ?>
-                </div>
-            </div>
-        </div>
+        <?php echo $yield; ?>
     </div>
     <div id="footer" class="ui inverted footer vertical segment">
         <div class="ui stackable center aligned page grid">
