@@ -12,10 +12,11 @@ class Article_model extends MK_Model {
         if ($class_alias != null) {
             $class = $this->article_category_model->find_by(array('alias' => $class_alias));
         }
-        if ($class != null) {
+        if ($class != null && isset($class->id)) {
             $params['category_id'] = $class->id;
+            return parent::find_all_by($params);
         }
-        return parent::find_all_by($params);
+        return array();
     }
 }
 
