@@ -29,9 +29,9 @@ class Menu_obj extends MK_Object {
         $href = '';
 
         if (MenuType::ARTICLE_CATEGORY == $this->type) {
-            $href = base_url("/article/$this->key_id.html");
+            $href = base_url("/articles/$this->key_id.html");
         } else if (MenuType::PAGE == $this->type) {
-            $href = base_url("/page/show/$this->key_id.html");
+            $href = base_url("/pages/show/$this->key_id.html");
         } else if (MenuType::LINK == $this->type) {
             $href = $this->relation->url;
         } else if (MenuType::GUEST_BOOK == $this->type) {

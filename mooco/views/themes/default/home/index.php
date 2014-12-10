@@ -35,7 +35,7 @@
                                 } else {
                                     $article = $articles[$i];
                         ?>
-                            <a class="item">
+                            <a class="item" href="<?php url_add_html('articles/show/' . $article->id, false); ?>">
                                 <i class="star icon"></i>
                                 <div class="content"><?php echo truncate($article->title, 20); ?></div>
                             </a>
@@ -67,7 +67,7 @@
                                 } else {
                                     $article = $articles[$i];
                         ?>
-                            <a class="item">
+                            <a class="item" href="<?php url_add_html('articles/show/' . $article->id, false); ?>">
                                 <i class="star icon"></i>
                                 <div class="content"><?php echo truncate($article->title, 20); ?></div>
                             </a>

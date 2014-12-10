@@ -18,3 +18,9 @@ class Article_model extends MK_Model {
         return parent::find_all_by($params);
     }
 }
+
+class Article_obj extends MK_Object {
+    public function get_category() {
+        return $this->article_category_model->find_by_id($this->category_id);
+    }
+}

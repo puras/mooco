@@ -29,5 +29,13 @@ if (!function_exists('theme_asset_url')) {
     }
 }
 
+if (!function_exists('url_add_html')) {
+    function url_add_html($path, $is_return = false) {
+        $npath = $path . '.html';
+        if ($is_return) return base_url($npath);
+        echo base_url($npath);
+    }
+}
+
 /* End of file mk_url_helper.php */
 /* Location: ./application/herpers/mk_url_helper.php */

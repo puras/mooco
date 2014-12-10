@@ -62,7 +62,16 @@ $route['manage/site_seo'] = 'manage/site_seo/index';
 $route['manage/login'] = 'manage/user/login';
 $route['manage/logout'] = 'manage/user/logout';
 
+$route['articles/(:num).html'] = 'article/index/$1';
+// $route['articles/alias/(*.).html'] = 'article/alias/$1';
+$route['articles/show/(:num).html'] = 'article/show/$1';
+// $route['articles/show(:num)'] = 'articles/show/$1';
 
+$route['pages/show/(:num).html'] = 'page/show/$1';
+$route['pages/show/(:num)'] = 'page/show/$1';
+// $route['pages/alias/(*.).html'] = 'page/alias/$1';
+
+// $route['guest_books'] = 'guest_book/index';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
