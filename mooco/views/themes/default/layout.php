@@ -18,8 +18,6 @@
     <script type="text/javascript" src="<?php theme_asset_url('lib/jquery/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('lib/semantic-ui/semantic.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('lib/owl.carousel/owl.carousel.js'); ?>"></script>
-    <script type="text/javascript" src="<?php theme_asset_url('lib/slider/jssor.js'); ?>"></script>
-    <script type="text/javascript" src="<?php theme_asset_url('lib/slider/jssor.slider.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('js/homepage.js'); ?>"></script>
 </head>
 <body>
