@@ -12,6 +12,7 @@
                         <th>排序</th>
                         <th>名称</th>
                         <th>类型</th>
+                        <th>父节点</th>
                         <th>目标</th>
                         <th>操作</th>
                     </tr>
@@ -25,6 +26,7 @@
                         <td><?php echo $menu->order; ?></td>
                         <td><?php echo $menu->name; ?></td>
                         <td><?php echo $menu->type; ?></td>
+                        <td><?php echo $menu->parent_id; ?></td>
                         <td><?php echo $menu->target; ?></td>
                         <td>
                             <?php link_to("/manage/menu/$menu->id/edit", '修改'); ?>
