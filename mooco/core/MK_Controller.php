@@ -16,7 +16,7 @@ abstract class MK_Controller extends CI_Controller {
             $session_user               = new stdClass();
             $session_user->id           = $user->id;
             $session_user->name         = $user->username;
-            $session_user->nickname     = 'puras'; //$user->nickname;
+            $session_user->nickname     = $user->nickname;
             $session_user->usergroup_id = $user->usergroup_id;
 
             $this->session->set_userdata($session_name, $session_user);
