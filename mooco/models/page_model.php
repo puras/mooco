@@ -23,7 +23,9 @@ class Page_obj extends MK_Object {
         $images = $this->fetch_images();
         if (isset($images[$idx])) {
             return $images[$idx];
+        } else {
+            return '/attached/image/default.jpg';
         }
-        return null;
+        // return null;
     } 
 }
