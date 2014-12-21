@@ -7,3 +7,5 @@ user_guide
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+/attached/image/*
+/attached/image/!default.jpg
