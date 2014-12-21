@@ -270,52 +270,6 @@
                                         <div class="clearBoth"></div>
                                     </div>
                                 </div>
-                                <div class="border_00-mid">
-                                    <div class="borderContent">
-                                        <div class="frontProducts_list">
-                                            <div class="comptitle_00">
-                                                <strong class="titlestyle_00">商品列表展示</strong>
-                                            </div>
-                                            <div class="type">
-                                                <span class="sort"></span>
-                                            </div>
-                                            <div class="scrollable scrollliner">
-                                                <ul class="mainul productlist-02 scrollitems owl-carousel">
-                                                <?php 
-                                                    $articles = $this->article_model->find_all_by_alias(array('category.alias' => 'products'));
-                                                    foreach ($articles as $article) {
-                                                ?>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="<?php url_add_html('articles/show/' . $article->id, false); ?>">
-                                                                    <img src="<?php echo $article->fetch_image(); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href="<?php url_add_html('articles/show/' . $article->id, false); ?>"> <?php echo $article->title; ?></a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                <?php
-                                                    }
-                                                ?>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="clearBoth"></div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

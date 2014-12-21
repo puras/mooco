@@ -19,10 +19,12 @@ class Menu extends Admin_Controller {
     public function new_form() {
         $data['menus'] = $this->menu_model->find_all_by(array('parent_id' => 0));
         $data['menu'] = new stdClass();
+        $data['menu']->key_id = '';
         $data['types'] = array(
                 array('link', '链接'),
                 array('page', '单页'),
-                array('article_category', '文章分类')
+                array('article_category', '文章分类'),
+                array('guest_book', '留言板')
             );
         $data['targets'] = array(
                 array('_self', '本窗口'),
@@ -39,7 +41,8 @@ class Menu extends Admin_Controller {
         $data['types'] = array(
                 array('link', '链接'),
                 array('page', '单页'),
-                array('article_category', '文章分类')
+                array('article_category', '文章分类'),
+                array('guest_book', '留言板')
             );
         $data['targets'] = array(
                 array('_self', '本窗口'),

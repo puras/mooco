@@ -23,7 +23,7 @@
     <div id="box_header">
         <div id="box_header_sub1">
             <div id="box_header_sub1_sub1">
-                <img src="" width="1141" height="96">
+                <img src="<?php theme_asset_url('img'); ?>" width="1141" height="96">
             </div>
             <div id="box_header_sub1_sub2">
                 <div class="columnSpace">
@@ -35,7 +35,7 @@
                                 foreach(top_menus() as $menu) {
                                     // $items = $menu->items;
                                     echo '<li>';
-                                    echo link_to($menu->href, $menu->name);
+                                    echo link_to($menu->href, $menu->name, array(), false);
                                     echo '</li>';
                                 }
                             ?>
@@ -98,7 +98,10 @@
                                                         <a href="">
                                                             <span style="color: #00507c">
                                                                 <strong>
-                                                                    <font face="">客户留言</font>
+                                                                    <?php
+                                                                        $menu = $this->menu_model->find_by(array('name' => '在线留言'));
+                                                                        link_to($menu->href, $menu->name, array(), false);
+                                                                    ?>
                                                                 </strong>
                                                             </span>
                                                         </a>
@@ -108,7 +111,10 @@
                                                         <a href="">
                                                             <span style="color: #00507c">
                                                                 <strong>
-                                                                    <font face="">人才招聘</font>
+                                                                    <?php
+                                                                        $menu = $this->menu_model->find_by(array('name' => '公司招聘'));
+                                                                        link_to($menu->href, $menu->name, array(), false);
+                                                                    ?>
                                                                 </strong>
                                                             </span>
                                                         </a>
@@ -118,7 +124,11 @@
                                                         <a href="">
                                                             <span style="color: #00507c">
                                                                 <strong>
-                                                                    <font face="">联系我们</font>
+                                                                    <font face=""></font>
+                                                                    <?php
+                                                                        $menu = $this->menu_model->find_by(array('name' => '联系我们'));
+                                                                        link_to($menu->href, $menu->name, array(), false);
+                                                                    ?>
                                                                 </strong>
                                                             </span>
                                                         </a>
@@ -155,7 +165,7 @@
                                             <span style="color: #000000;">
                                                 <span style="font-size: 12px;">
                                                     <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
-                                                        <font face="">企业OA | 企业邮箱 | ERP-NC系统</font>
+                                                        <font face="">企业CMS | 在线CMS | 企业App</font>
                                                     </span>
                                                 </span>
                                             </span>
