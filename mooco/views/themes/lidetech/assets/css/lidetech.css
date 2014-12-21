@@ -1923,4 +1923,106 @@ a.menu-text1:link {
     padding: 5px 0;
 }
 
+.listfrontProducts_list {
+    clear: both;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+}
+
+.listfrontProducts_list ul {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.listfrontProducts_list .content {
+    float: left;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.listfrontProducts_list .mainul {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.listfrontProducts_list .pic-module {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    width: 148px;
+}
+
+.pic a {
+    border-color: #e6e7e7;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 4px;
+}
+
+.listfrontProducts_list .pic-module .pic a {
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.listfrontProducts_list .pic-module .pic a img {
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+    height: 118px;
+    width: 138px;
+}
+
+.listfrontProducts_list .content .pro-module {
+    float: left;
+    text-align: center;
+    width: 96%;
+}
+
+.listfrontProducts_list ul {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.listfrontProducts_list .pro-module ul li {
+    line-height: 23px;
+}
+
+.listfrontProducts_list .pro-module ul li.code {
+    color: #f39800;
+    font-weight: bold;
+}
+
+.listfrontProducts_list .pro-module h1 {
+    color: #0068cc;
+    font-size: 12px;
+    margin: 0;
+}
+
+.listfrontProducts_list .pro-module h1 span {
+    display: none;
+}
+
+.listfrontProducts_list .pro-module ul li span {
+    color: #999;
+    font-weight: normal;
+}
+
+.listfrontProducts_list .pro-module p.buttonP {
+    clear: both;
+}
+
+.listfrontProducts_list .skip-pages {
+    clear: both;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+}
+
 

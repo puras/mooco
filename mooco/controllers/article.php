@@ -52,7 +52,7 @@ class Article extends Front_Controller {
             $part_template = $article_category->part_template;
             if (!empty($part_template) &&
                 file_exists(APPPATH . 'views/themes/' . $this->template . '/articles/' . $part_template . '_index.php')) {
-                $$tpl_index = $part_template . '_index';
+                $tpl_index = $part_template . '_index';
             }
 
             $articles = $this->article_model->find_all_by(array('category_id' => $article_category->id));
