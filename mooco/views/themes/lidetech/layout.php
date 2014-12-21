@@ -175,7 +175,7 @@
                                             <td>
                                                 <p style="text-align: left;">
                                                     <?php echo $site_info->copyright; ?>&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $site_info->icp; ?></a><br />
-                                                    <?php echo $site_info->name; ?>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mooko.net" target="_blank">木禾软件提供和技术支持</a>　　<?php link_to('/manage', '后台管理', array('target' => '_black')); ?>
+                                                    <?php echo $site_info->name; ?>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mooko.net" target="_blank">木禾软件提供技术支持</a>　　<?php link_to('/manage', '后台管理', array('target' => '_black')); ?>
                                                 </p>
                                             </td>
                                             <td style="text-align: right;">

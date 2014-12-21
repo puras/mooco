@@ -25,7 +25,7 @@
                                             <li class="menu-none">
                                                 <a href="<?php url_add_html('/articles/' . $ac->id); ?>" class="menu-text1">
                                                     <?php echo $ac->title; ?>
-                                                    <span>(100)</span>
+                                                    <span></span>
                                                 </a>
                                             </li>
                                         <?php
