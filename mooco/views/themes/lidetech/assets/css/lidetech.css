@@ -262,12 +262,23 @@ a:hover, a:active {
     width: 100%;
 }
 
-
+#box_left_sub1_sub1_sub2 {
+    padding-top: 10px;
+    width: 100%;
+}
 
 #box_left_sub1_sub2 {
     float: left;
     padding-left: 27px;
     width: 421px;
+}
+
+#box_left_sub1_sub2_sub1 {
+    width: 100%;
+}
+#box_left_sub1_sub2_sub2 {
+    padding-top: 10px;
+    width: 100%;
 }
 
 #box_left_sub1_sub3 {

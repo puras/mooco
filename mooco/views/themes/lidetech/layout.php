@@ -12,8 +12,10 @@
     <meta name="author" content="cms.mooko.net"/>
 
     <link rel="stylesheet" type="text/css" href="<?php theme_asset_url('css/lidetech.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php theme_asset_url('lib/owl.carousel/assets/owl.carousel.css'); ?>">
 
-    <script type="text/javascript" src="<?php theme_asset_url('js/jquery.js'); ?>"></script>
+    <script type="text/javascript" src="<?php theme_asset_url('lib/jquery/jquery.js'); ?>"></script>
+    <script type="text/javascript" src="<?php theme_asset_url('lib/owl.carousel/owl.carousel.js'); ?>"></script>
     <script type="text/javascript" src="<?php theme_asset_url('js/lidetech.js'); ?>"></script>
 </head>
 <body id="index">
@@ -28,13 +30,15 @@
                     <div class="frontColumns_navigation">
                         <div class="mattblackmenu">
                             <ul class="nav-first">
-                                <li class="first"><a href="#">网站首页</a></li>
-                                <li><a href="#">企业概况</a></li>
-                                <li><a href="#">企业概况</a></li>
-                                <li><a href="#">企业概况</a></li>
-                                <li><a href="#">企业概况</a></li>
-                                <li><a href="#">企业概况</a></li>
-                                <li><a href="#">企业概况</a></li>
+                                <li class="first"><a href="<?php echo base_url('/'); ?>">网站首页</a></li>
+                            <?php
+                                foreach(top_menus() as $menu) {
+                                    // $items = $menu->items;
+                                    echo '<li>';
+                                    echo link_to($menu->href, $menu->name);
+                                    echo '</li>';
+                                }
+                            ?>
                                 <li class="last"></li>
                             </ul>
                         </div>
@@ -77,508 +81,7 @@
         </div>
     </div>
     <!-- 头部导航结束 --> 
-    <div id="box_root" class="pageWidth">
-        <div id="box_main">
-            <div id="box_left">
-                <div id="box_left_sub1">
-                    <div id="box_left_sub1_sub1">
-                        <div id="box_left_sub1_sub1_sub1">
-                            <div class="columnSpace">
-                                <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub1.jpg'); ?>">
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="box_left_sub1_sub1_sub2">
-                            <div class="columnSpace">
-                                <div class="frontSpecifies_show">
-                                    <div class="decribe htmledit">
-                                        <p style="text-align: left;">
-                                            <img style="width: 113px; float: left; height: 129px; margin-right: 10px;" src="<?php theme_asset_url('/img/sub2-1.jpg'); ?>">
-                                            陕西美邦农药有限公司成立于1998年，致力于成为中国领先的农作物解决方案价值典范，是集农药研发、生产、销售及农业技术推广服务于一体的现代化企业，产品线涵盖水分散粒剂......
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="box_left_sub1_sub2">
-                        <div id="box_left_sub1_sub2_sub1">
-                            <div class="columnSpace">
-                                <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub2.jpg'); ?>">
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="box_left_sub1_sub2_sub2">
-                            <div class="columnSpace">
-                                <div class="frontNews_list">
-                                    <div>
-                                        <ul class="comstyle newslist">
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                            <li class="content column-num1">
-                                                <div class="newstitle">
-                                                    <ul>
-                                                        <li class="title">
-                                                            <h3>
-                                                                <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                            </h3>
-                                                        </li>
-                                                        <li class="date">
-                                                            <span> </span>
-                                                            2014-12-18
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="clearBoth"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="box_left_sub1_sub3">
-                        <div id="box_left_sub1_sub3_sub1">
-                            <div class="columnSpace">
-                                <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub3.jpg'); ?>">
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="box_left_sub1_sub3_sub2">
-                            <div id="box_left_sub1_sub3_sub2_sub1">
-                                <div id="box_left_sub1_sub3_sub2_sub1_sub1">
-                                    <div class="columnSpace">
-                                        <div class="frontSpecifies_show">
-                                            <div class="describe htmledit">
-                                                <p>
-                                                    <img src="<?php theme_asset_url('/img/sub2-2.jpg'); ?>">
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="box_left_sub1_sub3_sub2_sub1_sub2">
-                                    <div class="columnSpace">
-                                        <div class="frontNews_list1">
-                                            <div>
-                                                <div class="comstyle newslist">
-                                                    <li class="content column-num1">
-                                                        <div class="main">
-                                                            <div class="newstitle">
-                                                                <ul>
-                                                                    <li class="title">
-                                                                        <h3>
-                                                                            <a href="">全国农药药情信息技术...</a>
-                                                                        </h3>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="newslist">
-                                                                <ul>
-                                                                    <li class="summary">
-                                                                        <h3></h3>
-                                                                        <p>2014年11月28日-29日，全国农药药情信息技术交流会在...</p>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearBoth"></div>
-                            </div>
-                            <div id="box_left_sub1_sub3_sub2_sub2">
-                                <div class="columnSpace">
-                                    <div class="frontNews_list">
-                                        <div>
-                                            <ul class="comstyle newslist">
-                                                <li class="content column-num1">
-                                                    <div class="newstitle">
-                                                        <ul>
-                                                            <li class="title">
-                                                                <h3>
-                                                                    <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                                </h3>
-                                                            </li>
-                                                            <li class="date">
-                                                                <span> </span>
-                                                                2014-12-18
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="clearBoth"></li>
-                                                <li class="content column-num1">
-                                                    <div class="newstitle">
-                                                        <ul>
-                                                            <li class="title">
-                                                                <h3>
-                                                                    <a href="">韦尔奇“营销系统技能拓展”特训营开营</a>
-                                                                </h3>
-                                                            </li>
-                                                            <li class="date">
-                                                                <span> </span>
-                                                                2014-12-18
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="clearBoth"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearBoth"></div>
-                </div>
-                <div id="box_left_sub2">
-                    <div id="box_left_sub2_sub1">
-                        <div class="columnSpace">
-                            <div class="frontSpecifies_show">
-                                <div class="describe htmledit">
-                                    <p>
-                                        <a href="">
-                                            <img src="<?php theme_asset_url('/img/sub4.jpg'); ?>">
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="box_left_sub2_sub2">
-                        <div class="columnSpace">
-                            <div class="border_00">
-                                <div class="border_00-topr">
-                                    <div class="border_00_topl"> </div>
-                                </div>
-                                <div class="border_00-mid">
-                                    <div class="borderContent">
-                                        <div class="frontProducts_list">
-                                            <div class="comptitle_00">
-                                                <strong class="titlestyle_00">商品列表展示</strong>
-                                            </div>
-                                            <div class="type">
-                                                <span class="sort"></span>
-                                            </div>
-                                            <div class="scrollable scrollliner">
-                                                <ul class="mainul productlist-02 scrollitems">
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="content column-num60 conten1 cloned">
-                                                        <div class="pic-module">
-                                                            <div class="pic">
-                                                                <a href="">
-                                                                    <img src="<?php theme_asset_url('/img/sub2-3.jpg'); ?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pro-module">
-                                                            <ul class="basic">
-                                                                <li class="code">
-                                                                    <h1>
-                                                                        <span>产品名称: </span>
-                                                                        <strong>
-                                                                            <a href=""> 傲歌</a>
-                                                                        </strong>
-                                                                    </h1>
-                                                                </li>
-                                                            </ul>
-                                                            <p class="buttonP"> </p>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="clearBoth"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="box_left_sub3">
-                    <div id="box_left_sub3_sub1">
-                        <div class="columnSpace">
-                            <div class="frontSpecifies_show">
-                                <div class="describe htmledit">
-                                    <p>
-                                        <img src="<?php theme_asset_url('/img/link.jpg'); ?>">
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="box_left_sub3_sub2">
-                        <div class="columnSpace">
-                            <div class="frontLinks_list">
-                                <ul>
-                                    <li class="content column-num5">
-                                        <p class="pic">
-                                            <a href="">
-                                                <img src="<?php theme_asset_url('/img/sub2-4.jpg'); ?>">
-                                            </a>
-                                        </p>
-                                        <h4>
-                                            <a href="">中国农药信息网</a>
-                                        </h4>
-                                    </li>
-                                    <li class="content column-num5">
-                                        <p class="pic">
-                                            <a href="">
-                                                <img src="<?php theme_asset_url('/img/sub2-4.jpg'); ?>">
-                                            </a>
-                                        </p>
-                                        <h4>
-                                            <a href="">中国农药信息网</a>
-                                        </h4>
-                                    </li>
-                                    <li class="content column-num5">
-                                        <p class="pic">
-                                            <a href="">
-                                                <img src="<?php theme_asset_url('/img/sub2-4.jpg'); ?>">
-                                            </a>
-                                        </p>
-                                        <h4>
-                                            <a href="">中国农药信息网</a>
-                                        </h4>
-                                    </li>
-                                    <li class="content column-num5">
-                                        <p class="pic">
-                                            <a href="">
-                                                <img src="<?php theme_asset_url('/img/sub2-4.jpg'); ?>">
-                                            </a>
-                                        </p>
-                                        <h4>
-                                            <a href="">中国农药信息网</a>
-                                        </h4>
-                                    </li>
-                                    <li class="content column-num5">
-                                        <p class="pic">
-                                            <a href="">
-                                                <img src="<?php theme_asset_url('/img/sub2-4.jpg'); ?>">
-                                            </a>
-                                        </p>
-                                        <h4>
-                                            <a href="">中国农药信息网</a>
-                                        </h4>
-                                    </li>
-                                    <li class="clearBoth"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearBoth"></div>
-                </div>
-            </div>
-            <div class="clearBoth"></div>
-        </div>
-    </div>
+    <?php echo $yield; ?>
     <div id="box_footer">
         <div id="box_footer_sub1">
             <div id="box_footer_sub1_sub1">
@@ -628,21 +131,21 @@
                                                 <span style="color: #707070;">
                                                     <span style="font-size: 12px;">
                                                         <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
-                                                            联系热线：029-87999234&nbsp;&nbsp;&nbsp;&nbsp;电子邮箱：
+                                                            联系热线：<?php echo $site_info->phone; ?>&nbsp;&nbsp;&nbsp;&nbsp;电子邮箱：
                                                         </span>
                                                     </span>
                                                 </span>
                                                 <span style="font-size: 12px;">
                                                     <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
                                                         <a href="">
-                                                            <span style="color: #707070;">he@puras.me</span>
+                                                            <span style="color: #707070;"><?php echo $site_info->email; ?></span>
                                                         </a>
                                                     </span>
                                                 </span>
                                                 <span style="color: #707070;">
                                                     <span style="font-size: 12px;">
                                                         <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
-                                                            &nbsp;&nbsp;&nbsp;&nbsp;地址：西安市高新区科技路中段金桥国际广场C座15层
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;地址：<?php echo $site_info->address; ?>
                                                         </span>
                                                     </span>
                                                 </span>
@@ -674,8 +177,8 @@
                                         <tr>
                                             <td>
                                                 <p style="text-align: left;">
-                                                    <a href="www.cmscloud.cc">www.cmscloud.cc</a> . All Right Reserved. <a href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $site_info->icp; ?></a><br />
-                                                    陕西美邦农药有限公司&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mooko.net" target="_blank">木禾软件提供和技术支持</a>　　<?php link_to('/manage', '后台管理', array('target' => '_black')); ?>
+                                                    <?php echo $site_info->copyright; ?>&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $site_info->icp; ?></a><br />
+                                                    <?php echo $site_info->name; ?>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mooko.net" target="_blank">木禾软件提供和技术支持</a>　　<?php link_to('/manage', '后台管理', array('target' => '_black')); ?>
                                                 </p>
                                             </td>
                                             <td style="text-align: right;">

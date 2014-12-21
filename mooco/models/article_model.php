@@ -24,4 +24,26 @@ class Article_obj extends MK_Object {
     public function get_category() {
         return $this->article_category_model->find_by_id($this->category_id);
     }
+
+    public function fetch_images() {
+        $pattern = '/<img .*?src=\"(.+?)\".*?>/';
+        preg_match_all($pattern, $this->content, $matchs);
+        $images = array();
+        if (isset($matchs[1])) {
+            foreach ($matchs[1] as $image) {
+                $images[] = $image;
+            }
+        }
+        return $images;
+    }
+
+    public function fetch_image($idx = 0) {
+        $images = $this->fetch_images();
+        if (isset($images[$idx])) {
+            return $images[$idx];
+        } else {
+            return '/attached/image/default.jpg';
+        }
+        // return null;
+    }
 }
