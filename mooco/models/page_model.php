@@ -3,6 +3,7 @@
 class Page_model extends MK_Model {
     public function __construct() {
         parent::__construct();
+        $this->load->model('page_category_model');
     }
 }
 
@@ -28,4 +29,8 @@ class Page_obj extends MK_Object {
         }
         // return null;
     } 
+
+    public function get_parent() {
+        return $this->page_category_model->find_by($this->category_id);
+    }
 }
