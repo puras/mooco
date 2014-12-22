@@ -194,6 +194,10 @@ a:hover, a:active {
     text-decoration: none;
 }
 
+.frontColumns_navigation ul.nav-first li a:hover {
+    background: none repeat scroll 0 0 #006d29;
+}
+
 .frontColumns_navigation ul.nav-first li.last {
     float: right;
     height: 35px;
@@ -326,11 +330,6 @@ a:hover, a:active {
     width: 1010px;
 }
 
-
-
-
-
-
 #box_footer {
     background: url('../img/k_58.jpg') repeat-x scroll 50% top rgba(0, 0, 0, 0);
     width: 100%;
@@ -399,7 +398,7 @@ a:hover, a:active {
     color: #000;
     display: inline;
     float: none;
-    font: medium Times New Roman;
+    font: "Microsoft YaHei" medium Times New Roman;
     height: auto;
     letter-spacing: normal;
     list-style: outside none disc;
@@ -1766,6 +1765,23 @@ a.menu-text1:link {
     text-decoration: none;
 }
 
+.frontNewsCategory_tree .menu-first ul li.menu-none a:hover {
+    background: url('../img/first-bg-03.gif') no-repeat scroll 0 -32px rgba(0, 0, 0, 0);
+    color: #fff;
+    height: 32px;
+    margin: 1px 0;
+    text-decoration: none;
+    width: 221px;
+}
+
+.frontNewsCategory_tree .menu-first ul li.menu-none a.current{
+    background: url('../img/first-bg-03.gif') no-repeat scroll 0 -64px rgba(0, 0, 0, 0);
+    color: #fff;
+    height: 32px;
+    margin: 1px 0;
+    width: 221px;
+}
+
 .border_03 .border_03-footerr {
     background: url('../img/border-footerr.gif') no-repeat scroll right bottom rgba(0, 0, 0, 0);
     font-size: 0;
@@ -1891,7 +1907,7 @@ a.menu-text1:link {
     color: #000;
     display: inline;
     float: none;
-    font: medium Times New Roman;
+    font: "Microsoft YaHei" medium Times New Roman;
     height: auto;
     letter-spacing: normal;
     list-style: outside none disc;
@@ -2025,4 +2041,29 @@ a.menu-text1:link {
     width: 100%;
 }
 
+.box_title_sub1 {
+    background: url('../img/sub1.jpg') no-repeat center center rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
 
+.box_title_sub2 {
+    background: url('../img/sub2.jpg') no-repeat center center rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.box_title_sub3 {
+    background: url('../img/sub4.jpg') no-repeat center center rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.box_title_sub1 a, .box_title_sub2 a, .box_title_sub3 a {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+}

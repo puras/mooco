@@ -23,7 +23,7 @@
                                             foreach($pages as $pg) {
                                         ?>
                                             <li class="menu-none">
-                                                <a href="<?php url_add_html('/pages/show/' . $pg->id); ?>" class="menu-text1">
+                                                <a href="<?php url_add_html('/pages/show/' . $pg->id); ?>" class="menu-text1<?php if ($page->id == $pg->id) { echo ' current';}?>">
                                                     <?php echo $pg->title; ?>
                                                     <span></span>
                                                 </a>

@@ -23,7 +23,7 @@
                                             foreach($article_categories as $ac) {
                                         ?>
                                             <li class="menu-none">
-                                                <a href="<?php url_add_html('/articles/' . $ac->id); ?>" class="menu-text1">
+                                                <a href="<?php url_add_html('/articles/' . $ac->id); ?>" class="menu-text1<?php if ($article_category->id == $ac->id) { echo ' current';}?>">
                                                     <?php echo $ac->title; ?>
                                                     <span></span>
                                                 </a>

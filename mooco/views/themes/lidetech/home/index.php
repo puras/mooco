@@ -6,11 +6,14 @@
                 <div id="box_left_sub1">
                     <div id="box_left_sub1_sub1">
                         <div id="box_left_sub1_sub1_sub1">
+                            <?php 
+                                $page = $this->page_model->find_by(array('alias' => 'company'));
+                            ?>
                             <div class="columnSpace">
                                 <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub1.jpg'); ?>">
+                                    <p class="box_title_sub1">
+                                        <a href="<?php url_add_html('pages/show/' . $page->id, false); ?>">
+                                            <?php echo $page->title; ?>
                                         </a>
                                     </p>
                                 </div>
@@ -21,9 +24,6 @@
                                 <div class="frontSpecifies_show">
                                     <div class="decribe htmledit">
                                         <p style="text-align: left;">
-                                            <?php 
-                                                $page = $this->page_model->find_by(array('alias' => 'company'));
-                                            ?>
                                             <img style="width: 113px; float: left; height: 129px; margin-right: 10px;" src="<?php echo $page->fetch_image(); ?>">
                                             <?php echo truncate($page->content, 80); ?>
                                         </p>
@@ -34,11 +34,14 @@
                     </div>
                     <div id="box_left_sub1_sub2">
                         <div id="box_left_sub1_sub2_sub1">
+                            <?php 
+                                $article_category = $this->article_category_model->find_by(array('alias' => 'news'));
+                            ?>
                             <div class="columnSpace">
                                 <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub2.jpg'); ?>">
+                                    <p class="box_title_sub2">
+                                        <a href="<?php url_add_html('articles/' . $article_category->id, false); ?>">
+                                            <?php echo $article_category->title; ?>
                                         </a>
                                     </p>
                                 </div>
@@ -50,7 +53,7 @@
                                     <div>
                                         <ul class="comstyle newslist">
                                         <?php
-                                            $articles = $this->article_model->find_all_by_alias(array('category.alias' => 'news'));
+                                            $articles = $this->article_model->find_all_by_alias(array('category.alias' => $article_category->alias));
                                             $at_count = sizeof($articles);
                                             $count = 6;
                                             for ($i = 0; $i < $count; $i++) {
@@ -103,11 +106,14 @@
                     </div>
                     <div id="box_left_sub1_sub3">
                         <div id="box_left_sub1_sub3_sub1">
+                        <?php
+                            $article_category = $this->article_category_model->find_by(array('alias' => 'knowledge'));
+                        ?>
                             <div class="columnSpace">
                                 <div class="describe htmledit">
-                                    <p>
-                                        <a href="#">
-                                            <img src="<?php theme_asset_url('/img/sub3.jpg'); ?>">
+                                    <p class="box_title_sub1">
+                                        <a href="<?php url_add_html('articles/' . $article_category->id, false); ?>">
+                                            <?php echo $article_category->title; ?>
                                         </a>
                                     </p>
                                 </div>
@@ -115,7 +121,7 @@
                         </div>
                         <div id="box_left_sub1_sub3_sub2">
                             <?php
-                                $articles = $this->article_model->find_all_by_alias(array('category.alias' => 'knowledge'));
+                                $articles = $this->article_model->find_all_by_alias(array('category.alias' => $article_category->alias));
 
                                 if (sizeof($articles) > 0) {
                                     $article = $articles[0];
@@ -206,12 +212,15 @@
                 </div>
                 <div id="box_left_sub2">
                     <div id="box_left_sub2_sub1">
+                    <?php
+                        $article_category = $this->article_category_model->find_by(array('alias' => 'products'))
+                    ?>
                         <div class="columnSpace">
                             <div class="frontSpecifies_show">
                                 <div class="describe htmledit">
-                                    <p>
-                                        <a href="">
-                                            <img src="<?php theme_asset_url('/img/sub4.jpg'); ?>">
+                                    <p class="box_title_sub3">
+                                        <a href="<?php url_add_html('articles/' . $article_category->id, false); ?>">
+                                            <?php echo $article_category->title; ?>
                                         </a>
                                     </p>
                                 </div>
@@ -236,7 +245,7 @@
                                             <div class="scrollable scrollliner">
                                                 <ul class="owl-carousel">
                                                 <?php 
-                                                    $articles = $this->article_model->find_all_by_alias(array('category.alias' => 'products'));
+                                                    $articles = $this->article_model->find_all_by_alias(array('category.alias' => $article_category->alias));
                                                     foreach ($articles as $article) {
                                                 ?>
                                                     <li class="content column-num60 conten1 cloned">

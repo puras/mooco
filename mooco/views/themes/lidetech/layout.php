@@ -82,41 +82,34 @@
                                             <span style="color: #00507c;">
                                                 <span style="font-size: 14px;">
                                                     <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
-                                                        <a href="">
+                                                    <?php
+                                                        $menu = $this->menu_model->find_by(array('name' => '在线留言'));
+                                                    ?>
+                                                        <a href="<?php echo $menu->href; ?>">
                                                             <span style="color: #00507c">
-                                                                <strong>
-                                                                    <?php
-                                                                        $menu = $this->menu_model->find_by(array('name' => '在线留言'));
-                                                                        link_to($menu->href, $menu->name, array(), false);
-                                                                    ?>
-                                                                </strong>
+                                                                <strong><?php echo $menu->name; ?></strong>
                                                             </span>
                                                         </a>
                                                         <strong>
                                                             <font face="">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
                                                         </strong>
-                                                        <a href="">
+                                                        <?php
+                                                            $menu = $this->menu_model->find_by(array('name' => '公司招聘'));
+                                                        ?>
+                                                        <a href="<?php echo $menu->href; ?>">
                                                             <span style="color: #00507c">
-                                                                <strong>
-                                                                    <?php
-                                                                        $menu = $this->menu_model->find_by(array('name' => '公司招聘'));
-                                                                        link_to($menu->href, $menu->name, array(), false);
-                                                                    ?>
-                                                                </strong>
+                                                                <strong><?php echo $menu->name; ?></strong>
                                                             </span>
                                                         </a>
                                                         <strong>
                                                             <font face="">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
                                                         </strong>
-                                                        <a href="">
+                                                        <?php
+                                                            $menu = $this->menu_model->find_by(array('name' => '联系我们'));
+                                                        ?>
+                                                        <a href="<?php echo $menu->href; ?>">
                                                             <span style="color: #00507c">
-                                                                <strong>
-                                                                    <font face=""></font>
-                                                                    <?php
-                                                                        $menu = $this->menu_model->find_by(array('name' => '联系我们'));
-                                                                        link_to($menu->href, $menu->name, array(), false);
-                                                                    ?>
-                                                                </strong>
+                                                                <strong><?php echo $menu->name; ?></strong>
                                                             </span>
                                                         </a>
                                                     </span>
@@ -152,7 +145,7 @@
                                             <span style="color: #000000;">
                                                 <span style="font-size: 12px;">
                                                     <span style="font-family: 微软雅黑, tahoma, arial, sans-serif;">
-                                                        <font face="">企业CMS | 在线CMS | 企业App</font>
+                                                        <!-- <font face="">企业CMS | 在线CMS | 企业App</font> -->
                                                     </span>
                                                 </span>
                                             </span>
