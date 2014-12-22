@@ -172,8 +172,8 @@
                                         <div>
                                             <ul class="comstyle newslist">
                                             <?php 
-                                                $count = sizeof($articles) >= 3 ? 2 : sizeof($articles);
-                                                for ($i = 1; $i <= $count; $i++) {
+                                                $count = sizeof($articles) >= 3 ? 3 : sizeof($articles);
+                                                for ($i = 1; $i < $count; $i++) {
                                                     $article = $articles[$i];
                                             ?>
                                                 <li class="content column-num1">
