@@ -53,11 +53,11 @@
                             <div class="slide-contente">
                                 <div class="slide-pic">
                                     <ul class="pic">
-                                        <li><a href="#"><img src="<?php theme_asset_url('img/1.jpg'); ?>" alt="图片1来源于网络，版权属于作者"></a></li>
-                                        <li><a href="#"><img src="<?php theme_asset_url('img/2.jpg'); ?>" alt="图片2来源于网络，版权属于作者"></a></li>
-                                        <li><a href="#"><img src="<?php theme_asset_url('img/3.jpg'); ?>" alt="图片3来源于网络，版权属于作者"></a></li>
-                                        <li><a href="#"><img src="<?php theme_asset_url('img/4.jpg'); ?>" alt="图片4来源于网络，版权属于作者"></a></li>
-                                        <li><a href="#"><img src="<?php theme_asset_url('img/5.jpg'); ?>" alt="图片5来源于网络，版权属于作者"></a></li>
+                                        <li style="display: none;"><a href="#"><img src="<?php theme_asset_url('img/1.jpg'); ?>" alt="图片1来源于网络，版权属于作者"></a></li>
+                                        <li style="display: none;"><a href="#"><img src="<?php theme_asset_url('img/2.jpg'); ?>" alt="图片2来源于网络，版权属于作者"></a></li>
+                                        <li style="display: none;"><a href="#"><img src="<?php theme_asset_url('img/3.jpg'); ?>" alt="图片3来源于网络，版权属于作者"></a></li>
+                                        <li style="display: none;"><a href="#"><img src="<?php theme_asset_url('img/4.jpg'); ?>" alt="图片4来源于网络，版权属于作者"></a></li>
+                                        <li style="display: none;"><a href="#"><img src="<?php theme_asset_url('img/5.jpg'); ?>" alt="图片5来源于网络，版权属于作者"></a></li>
                                     </ul>
                                 </div>
                             </div>
