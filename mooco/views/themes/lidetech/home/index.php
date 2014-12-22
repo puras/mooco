@@ -25,7 +25,7 @@
                                                 $page = $this->page_model->find_by(array('alias' => 'company'));
                                             ?>
                                             <img style="width: 113px; float: left; height: 129px; margin-right: 10px;" src="<?php echo $page->fetch_image(); ?>">
-                                            <?php echo truncate($page->content, 90); ?>
+                                            <?php echo truncate($page->content, 80); ?>
                                         </p>
                                     </div>
                                 </div>
