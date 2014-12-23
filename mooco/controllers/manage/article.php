@@ -18,13 +18,17 @@ class Article extends Admin_Controller {
 
     public function new_form() {
         $data['article_categories'] = $this->article_category_model->find_all();
-        $data['article'] = new stdClass();
+        $article = new stdClass();
+        $article->publish_time = Date('Y-m-d');
+        var_dump($article);
+        $data['article'] = $article;
         $this->load->view($this->view_path('new'), $data);
     }
 
     public function edit($id) {
         $data['article_categories'] = $this->article_category_model->find_all();
         $data['article'] = $this->article_model->find_by_id($id);
+        var_dump($this->article_model->find_by_id($id));
         $this->load->view($this->view_path('edit'), $data);
     }
 
