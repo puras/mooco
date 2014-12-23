@@ -20,7 +20,6 @@ class Article extends Admin_Controller {
         $data['article_categories'] = $this->article_category_model->find_all();
         $article = new stdClass();
         $article->publish_time = Date('Y-m-d');
-        var_dump($article);
         $data['article'] = $article;
         $this->load->view($this->view_path('new'), $data);
     }
@@ -28,7 +27,6 @@ class Article extends Admin_Controller {
     public function edit($id) {
         $data['article_categories'] = $this->article_category_model->find_all();
         $data['article'] = $this->article_model->find_by_id($id);
-        var_dump($this->article_model->find_by_id($id));
         $this->load->view($this->view_path('edit'), $data);
     }
 
