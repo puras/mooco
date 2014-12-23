@@ -24,7 +24,7 @@ class Article extends Front_Controller {
 
         if (!empty($part_template) &&
             file_exists(APPPATH . 'views/themes/' . $this->template . '/articles/' . $part_template . '_show.php')) {
-            $$tpl_index = $part_template . '_show';
+            $tpl_show = $part_template . '_show';
         }
         if ($article_category->parent_id == 0) {
             $parent_category = $article_category;

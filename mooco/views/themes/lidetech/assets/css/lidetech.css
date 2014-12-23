@@ -1878,6 +1878,12 @@ a.menu-text1:link {
     text-align: center;
 }
 
+.frontNews_detail .no-message {
+    border-bottom: 1px dashed #666;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
 .frontNews_detail .message span {
     padding: 0 10px;
 }
