@@ -42,13 +42,20 @@
                         <?php select_tag($article, 'category_id', array('list' => $article_categories, 'key' => 'id', 'val' => 'title')); ?>
                     </div>
                     <div class="field">
-                        <label>点击数</label>
+                        <label>发布时间</label>
+                        <div class="ui left input">
+                            <?php text_tag($article, 'publish_time', array('placeholder' => '填写发布时间，如2014-09-06')); ?>
+                            <div class="ui corner label">
+                                <i class="icon asterish"></i>
+                            </div>
+                        </div>
+                        <!-- <label>点击数</label>
                         <div class="ui left input">
                             <?php text_tag($article, 'click_count', array('placeholder' => '填写初始点击数')); ?>
                             <div class="ui corner label">
                                 <i class="icon asterisk"></i>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="field">

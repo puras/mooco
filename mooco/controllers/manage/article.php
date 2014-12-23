@@ -30,7 +30,8 @@ class Article extends Admin_Controller {
 
     public function create() {
         $article = $this->_form_data();
-        $article['publish_time'] = Date('Y-m-d H:i:s');
+        // $article['publish_time'] = Date('Y-m-d H:i:s');
+        $article['click_count'] = 1;
         $article['creator_id'] = $this->session->userdata('mk_current_user')->id;
         $this->article_model->insert($article);
 
@@ -52,12 +53,13 @@ class Article extends Admin_Controller {
 
     private function _form_data() {
         return array(
-            'title'       => $this->input->post('title'),
-            'content'     => $this->input->post('content'),
-            'from'        => $this->input->post('from'),
-            'author'      => $this->input->post('author'),
-            'click_count' => $this->input->post('click_count'),
-            'category_id' => $this->input->post('category_id')
+            'title'         => $this->input->post('title'),
+            'content'       => $this->input->post('content'),
+            'from'          => $this->input->post('from'),
+            'author'        => $this->input->post('author'),
+            'publish_time'  => $this->input->post('publish_time'),
+            // 'click_count'   => $this->input->post('click_count'),
+            'category_id'   => $this->input->post('category_id')
         );
     }
 }
