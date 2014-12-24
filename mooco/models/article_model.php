@@ -14,7 +14,7 @@ class Article_model extends MK_Model {
         }
         if ($class != null && isset($class->id)) {
             $params['category_id'] = $class->id;
-            return parent::find_all_by($params);
+            return parent::find_all_by($params, 'publish_time desc');
         }
         return array();
     }

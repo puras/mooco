@@ -55,7 +55,7 @@ class Article extends Front_Controller {
                 $tpl_index = $part_template . '_index';
             }
 
-            $articles = $this->article_model->find_all_by(array('category_id' => $article_category->id));
+            $articles = $this->article_model->find_all_by(array('category_id' => $article_category->id), 'publish_time desc');
 
             if ($article_category->parent_id == 0) {
                 $parent_category = $article_category;
