@@ -24,7 +24,7 @@
     <div id="box_header">
         <div id="box_header_sub1">
             <div id="box_header_sub1_sub1">
-                <img src="<?php theme_asset_url('img'); ?>" width="1141" height="96">
+                <img src="<?php theme_asset_url('img/banner.jpg'); ?>" width="1141" height="96">
             </div>
             <div id="box_header_sub1_sub2">
                 <div class="columnSpace">
